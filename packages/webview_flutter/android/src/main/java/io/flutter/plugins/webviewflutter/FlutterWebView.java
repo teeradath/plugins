@@ -171,6 +171,7 @@ public class FlutterWebView implements PlatformView, MethodCallHandler {
       headers = Collections.emptyMap();
     }
     webView.loadUrl(url, headers);
+    webView.setBackgroundColor(Color.TRANSPARENT);
     result.success(null);
   }
 
